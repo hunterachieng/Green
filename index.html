@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/953e8760a2.js" crossorigin="anonymous"></script>
+    <title>Landing Page</title>
+</head>
+<body>
+<header id = "header">
+    
+    
+    <nav id = "nav-bar">
+                 
+        <img src = "logo.jpg" id= "header-img" alt = "logo">
+
+        <div id ="toggle">
+               <button class = "nav-toggle"><i class = "fas fa-bars"></i></button>
+               </div>
+        <ul class = "links show-links">
+            
+            <li class = "nav-link"><a href = "#">GREEN</a></li>
+            <li class = "nav-link"><a href = "#">PRODUCTS</a></li>
+            <li class = "nav-link"><a href = "#">CONTACT US</a></li>
+            
+           
+        </ul>
+       
+    </nav>
+
+</header>
+<main>
+     
+<h1 id="products1">Green</h1>
+     
+<video id = "video" controls>
+    
+    <source src = "video.mp4" type="video/mp4">
+    Your browser does not support the video tag
+</video>
+<h2 id="products">Our Products</h2><hr>
+<div id = "products">
+            <img src="smallplant.jpg" alt = "smallplant">
+      
+        <img src = "floorplant.jpg" alt = "floorplant">
+        
+        <img src= "plantdirty.jpg" alt = "plantdirty">
+        
+
+</div>
+<!-- plant descriptions -->
+<div id="explanations">
+    <div id="one">
+    <h3>Heartleaf philodendron
+        <i>Philodendron hederaceum</i>
+    </h3>
+    <p>This plant is best suited for weddings,<span id="dots">...</span>
+        <span id = "more"> birthdays anniversaries due to its heart-shaped leaves (what better way to show your love than a plant!).
+             It loves to climb and makes a great hanging plant, plus it’s also very hard to kill. 
+             New plant parents rejoice!
+        </span><button id= "read-more1" >Read more</button></p>
+        
+        </div>
+        <div id = "two">
+            <h3> Monstera<br>
+                <i>Monstera deliciosa</i>
+            </h3>
+            <p>
+                Also known as the Swiss cheese plant for its holes, 
+                the Monstera is iconic from many 70’s photographs,<span id= "dots2"> ...</span>
+                <span id="more2">album covers, or advertisements.With its aerial roots, 
+                    the Monsteraloves to climb and spread out.
+                     </span><button id= "read-more2">Read more</button> </p>
+                     
+        </div>
+        <div id= "three">
+            <h3> Zenzi ZZ<br>
+                <i> Zamioculcas zamiifolia</i>
+            </h3>
+            <p>
+                The Zenzi ZZ plant is the little sib of the larger ZZ plant.<span id= "dots3">...</span>
+                <span id= "more3">
+                 With its dark green leaves and thick stems, 
+                 it’s perfect as a desk plant (plus, it might make you want to go to work!).
+           </span><button id= "read-more3">Read more</button></p>
+           
+        </div>
+        
+</div>
+<p id = "products-more"><a href="#">&#8594 View more Products</a></p>
+
+<form id= "form" >
+    
+    <label>Email : <input type= "email" id = "email" placeholder = "type email" required>  </label><br>
+    
+    <input type = "submit" id = "submit" value = " submit" formaction=" https://www.freecodecamp.com/email-submit">
+
+</form>
+
+
+</main>
+
+</body>
+<script src = "main.js"></script>
+
+
+
+
+
+
+</html>
