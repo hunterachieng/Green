@@ -60,10 +60,16 @@ toggleNav.addEventListener("click", function(){
           }
     else{
         links.classList.add("show-links");
-           
-        
+      
     } 
-       
+    if (main.style.display == "inline"){
+        main.style.display = "none";
+        main.backgroundcolor = "green";
+    }
+    else{
+        main.style.display = "inline";
+    }  
+          
 })
 
 // toggleNav.addEventListener("click", function(){
