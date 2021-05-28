@@ -39,6 +39,10 @@
   height: 50px;
  
 }
+.main{
+  background-color: white;
+  display:inline;
+}
 
 }
 /* removing bullets, margin, and padding */
@@ -96,18 +100,20 @@
    height: 5%;
    overflow: visible;
    width: fit-content;
-   
+     
   
  }
  .nav-link{
   display: inline;
   
  }
+
  .nav-link a{
    text-decoration: none;
   font-size: 10px;
   font-family: sans-serif;
   color:black;
+  font-weight: bold;
   padding: 0px 20px;
 }
 }
@@ -286,5 +292,19 @@ font-family: sans-serif;
     margin-left: 70%;
     font-size: 12px;
     font-family: sans-serif;
+    }
+    #read-more1{
+      font-size: 9px; 
+       
+    }
+    #read-more2{
+      font-size: 9px;    
+    }
+    #read-more3{
+      font-size: 9px;    
+    }
+    #products-more{
+      font-size:10px;
+      margin-left: 60%;
     }
 }

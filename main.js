@@ -52,6 +52,7 @@ button3.addEventListener("click",function (){
 //adding an event to the toggle bar
 const toggleNav = document.querySelector(".nav-toggle");
 const links = document.querySelector(".links");
+const main = document.querySelector(".main");
 toggleNav.addEventListener("click", function(){
    if (links.classList.contains("show-links")){
        links.classList.remove("show-links");
@@ -59,11 +60,15 @@ toggleNav.addEventListener("click", function(){
           }
     else{
         links.classList.add("show-links");
+           
         
-    }
-    
+    } 
+       
 })
 
+// toggleNav.addEventListener("click", function(){
+//     if(links.)
+// })
 
 
 
