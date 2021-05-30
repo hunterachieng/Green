@@ -185,6 +185,7 @@
 @media (max-width:415px){
   #video{
     margin-top: 5%;
+    z-index: 1000;
   }
 
 }
@@ -213,13 +214,17 @@ hr{
   display: grid;
     grid-template-columns:40% 40%;
   grid-auto-rows: 300px auto;
-  grid-gap:10px;
+  grid-gap:20px;
   margin-left: 30%;
 }
 
 #products img{
-  width: 50%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
+}
+#products #imagetwo{
+  width: 100%;
+  height: 90%;
 }
 
 @media screen and (max-width:415px){
@@ -262,15 +267,18 @@ hr{
     }
 }
 #one{
-  width: 50%;
+  width: 100%;
+  line-height: 200%;
    
 }
 
 #two{
-  width: 50%;
+  width: 100%;
+  line-height: 200%;
 }
 #three{
-  width: 50%;
+  width: 100%;
+  line-height: 200%;
 }
 #more{
   display: none;
