@@ -49,34 +49,19 @@ button3.addEventListener("click",function (){
     }
 });
 
-//adding an event to the toggle bar
-const toggleNav = document.querySelector(".nav-toggle");
-const links = document.querySelector(".links");
-const main = document.querySelector(".main");
-toggleNav.addEventListener("click", function(){
-   if (links.classList.contains("show-links")){
-       links.classList.remove("show-links");
-       
-          }
-    else{
-        links.classList.add("show-links");
-      
-    } 
-    if (main.style.display == "inline"){
-        main.style.display = "none";
-        main.backgroundcolor = "green";
+const navBar = document.getElementById("nav-bar");
+const btn = document.getElementById("btntoggle");
+btn.addEventListener("click", function(){
+    if(navBar.classList.contains("responsive")){
+        navBar.classList.remove("responsive");
+        
     }
     else{
-        main.style.display = "inline";
-    }  
-          
+        navBar.classList.add("responsive");
+    }
+   
 })
-
-// toggleNav.addEventListener("click", function(){
-//     if(links.)
-// })
-
-
+console.log(navBar.classList.contains("responsive"));
 
 
 

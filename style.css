@@ -4,7 +4,7 @@
    
 }
 .nav-toggle{
- font-size: 25px;
+ font-size: 18px;
   color: white;
   padding: 0px;
  border: transparent ;
@@ -18,20 +18,22 @@
  
 }
 /* defining the main nav block */
-#nav-bar{
+.top-nav{
     display: block;
-    position: sticky;
+    position: fixed;
     height: 60px;
     margin: -6px;
     line-height: 60px;
     background-color: rgb(114, 245, 114);
-}
+   }
 @media (max-width:415px){
-  #nav-bar{
+  .responsive{
     display: block;
     height: 50px;
     margin: -6px;
-    line-height: 60px;
+    line-height: 50px;
+    
+    
    
 }
 #header-img{
@@ -39,12 +41,8 @@
   height: 50px;
  
 }
-.main{
-  background-color: white;
-  display:inline;
-}
 
-}
+} 
 /* removing bullets, margin, and padding */
 .links{
  display: inline-block;
@@ -54,17 +52,15 @@
   margin-left: 50%;
   vertical-align: top;
   
-}
-.show-links{
-  height:3%;
+} 
 
-}
-/* diplaying the links ie float or display: inline */
-.nav-link{
+
+/* displaying the links ie float or display: inline */
+ .nav-link{
   display: inline;
-}
+} 
 /* defining block stylings for the links */
-.nav-link a{
+ .top-nav a{
   display: inline-block;
   text-align: center;
   padding: 0px 30px;
@@ -72,93 +68,87 @@
   font-size: 18px;
   font-family: sans-serif;
   color:white;
-}
+ 
+} 
 
-@media  (max-width: 415px){
-
-  .nav-toggle{
-    font-size: 18px;
-     padding: 0px;
-   border: transparent ;
-   background-color: transparent;
-   display: inline-block;
-    
+@media screen  and (max-width:415px){
+  .top-nav a{
+    display: none;
   }
-  #toggle{
-    margin-right: 5%;
+   .responsive #toggle{
     float: right;
+    margin-right: 5%;
     
-  }
-  
-.links{
-  overflow: hidden;
-   list-style-type: none;
-   height: 0;
-   transition: var(--transition);  
- }
- .show-links{
-   height: 5%;
-   overflow: visible;
-   width: fit-content;
-  
-  
- }
- .nav-link{
-  display: list-item;
-  
- }
-
- .nav-link a{
-   text-decoration: none;
-  font-size: 10px;
-  font-family: sans-serif;
-  color:black;
-  font-weight: bold;
-  padding: 0px 10px;
-  margin-top: 35%;
-}
-.nav-link :hover{
-  color: rgb(52, 240, 52);
-}
-}
-@media (min-width:450px) and (max-width:700px){
-  .links{
-    overflow: hidden;
-     list-style-type: none;
-     height: 0;
-     transition: var(--transition);  
-   }
-   .show-links{
-     height: 20%;
-     overflow: visible;
-     
    }
    .nav-toggle{
     font-size: 18px;
      padding: 0px;
-   border: transparent ;
-   background-color: transparent;
-   display: inline-block;
-    
-  }
-  .nav-link{
+     border: transparent ;
+     background-color: transparent;
+     display: inline-block;
+       
+     } 
+    .responsive a{
+    text-decoration: none;
     display: list-item;
+    padding-top: 0px;
+    color: black;
+    font-size: 14px;
+    padding-left: 1px;
+    
+       
+  } 
+  .responsive a:hover{
+     color: green;
+  }
+  .top-nav.responsive .links{
+    background-color: rgb(114, 245, 114);
+    margin-top: -10%;
+    margin-left: 65%;
+    padding: 10px;
+  }
+ 
+ }
+ @media (min-width:450px) and (max-width:700px){
+  .top-nav a{
+    display: none;
+  }
+  .responsive #toggle{
+    float: right;
+    margin-right: 5%;
     
    }
-  .nav-link a{
+   .nav-toggle{
+    font-size: 18px;
+     padding: 0px;
+     border: transparent ;
+     background-color: transparent;
+     display: inline-block;
+       
+     } 
+    .top-nav.responsive a{
     text-decoration: none;
-   font-size: 10px;
-   font-family: sans-serif;
-   color:black;
-   font-weight: bold;
-   padding: 0px 10px;
-   margin-top: 45%;
- }
- .nav-link :hover{
-   color: rgb(52, 240, 52);
- }
-}
-@media (min-width:705px) and (max-width:1024px){
+    display: list-item;
+    padding-top: 5px;
+    color: black;
+    font-size: 14px;
+    padding-left: 5px;
+    
+    
+       
+  } 
+  .top-nav.responsive a:hover{
+     color: green;
+  }
+  .top-nav.responsive .links{
+    background-color: rgb(114, 245, 114);
+    margin-top: -5%;
+    margin-left: 80%;
+    padding: 10px;
+  }
+ 
+} 
+ @media (min-width:705px) and (max-width:1024px){
   .links{
     display: inline-block;
     list-style-type: none;
@@ -171,9 +161,9 @@
    }
 }
 #products1{
-  margin-top: 2%;
+  margin-top: 0%;
   text-align: center;
-  color: rgb(53, 201, 53);
+  color: rgb(114, 245, 114);
   font-family: 'Kaushan Script', cursive;
 }
 #products2{
@@ -181,14 +171,14 @@
 }
 @media (max-width:415px){
   #products1{
-    font-size: 20px;
+    font-size: 18px;
   }
   #products2{
     font-size: 18px;
   }
 }
 #video{
-    margin-top: 5%;
+    margin-top: 10%;
     margin-left: 25%;
     width: 50%;
 }
@@ -220,37 +210,67 @@ hr{
     
 }
 #products{
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+    grid-template-columns:40% 40%;
+  grid-auto-rows: 300px auto;
+  grid-gap:10px;
+  margin-left: 30%;
 }
+
 #products img{
-  width: 20%;
-  height: 20%;
+  width: 50%;
+  height: 60%;
 }
-#explanations{
-  display: flex;
-  justify-content: space-evenly;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-}
+
 @media screen and (max-width:415px){
   #explanations{
-    font-size: 10px;
+    font-size: 16px;
     font-family: serif;
    
   }
+  #products{
+    display: initial; 
+    text-align: center;
+  
+    }
+     #one{
+      margin-left: 25%;
+      }
+    #two{
+      margin-left: 25%;
+      }
+    #three{
+      margin-left: 25%;
+  
+    }
+}
+@media (min-width:450px) and (max-width:800px){
+  #products{
+    display: initial; 
+    text-align: center;
+  
+    }
+     #one{
+      margin-left: 25%;
+      }
+    #two{
+      margin-left: 25%;
+      }
+    #three{
+      margin-left: 25%;
+  
+    }
 }
 #one{
-  width: 20%;
-  
-  
+  width: 50%;
+   
 }
 
 #two{
-  width: 20%;
+  width: 50%;
 }
 #three{
-  width: 20%;
+  width: 50%;
 }
 #more{
   display: none;
@@ -314,17 +334,17 @@ font-family: sans-serif;
     font-family: sans-serif;
     }
     #read-more1{
-      font-size: 9px; 
+      font-size: 16px; 
        
     }
     #read-more2{
-      font-size: 9px;    
+      font-size: 16px;    
     }
     #read-more3{
-      font-size: 9px;    
+      font-size: 16px;    
     }
     #products-more{
-      font-size:10px;
-      margin-left: 60%;
+      font-size:16px;
+      margin-left: 10%;
     }
 }

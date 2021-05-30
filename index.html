@@ -12,14 +12,14 @@
 <header id = "header">
     
     
-    <nav id = "nav-bar">
+    <nav id = "nav-bar" class = "top-nav responsive">
                  
         <img src = "logo.jpg" id= "header-img" alt = "logo">
 
         <div id ="toggle">
-               <button class = "nav-toggle"><i class = "fas fa-bars"></i></button>
+               <button class = "nav-toggle" id = "btntoggle"><i class = "fas fa-bars"></i></button>
                </div>
-        <ul class = "links show-links">
+        <ul class = "links" id = "link">
             
             <li class = "nav-link"><a href = "#">GREEN</a></li>
             <li class = "nav-link"><a href = "#">PRODUCTS</a></li>
@@ -37,32 +37,27 @@
      
 <video id = "video" controls>
     
-    <source src = "video.mp4" type="video/mp4">
+    <source src = "https://youtu.be/FaAU_Hxg6tU" type="video/mp4">
     Your browser does not support the video tag
    </video>
 <h2 id="products2">Our Products</h2><hr>
 <div id = "products">
-            <img src="smallplant.jpg" alt = "smallplant">
-      
-        <img src = "floorplant.jpg" alt = "floorplant">
-        
-        <img src= "plantdirty.jpg" alt = "plantdirty">
-        
+    <div> <img src="smallplant.jpg" alt = "smallplant"></div>
 
-</div>
-<!-- plant descriptions -->
-<div id="explanations">
-    <div id="one">
-    <h3>Heartleaf philodendron
-        <i>Philodendron hederaceum</i>
-    </h3>
-    <p>This plant is best suited for weddings,<span id="dots">...</span>
-        <span id = "more"> birthdays anniversaries due to its heart-shaped leaves (what better way to show your love than a plant!).
-             It loves to climb and makes a great hanging plant, plus it’s also very hard to kill. 
-             New plant parents rejoice!
-        </span><button id= "read-more1" >Read more</button></p>
-        
-        </div>
+            
+            <div id="one">
+                <h3>Heartleaf philodendron
+                    <i>Philodendron hederaceum</i>
+                </h3>
+                <p>This plant is best suited for weddings,<span id="dots">...</span>
+                    <span id = "more"> birthdays anniversaries due to its heart-shaped leaves (what better way to show your love than a plant!).
+                         It loves to climb and makes a great hanging plant, plus it’s also very hard to kill. 
+                         New plant parents rejoice!
+                    </span><button id= "read-more1" >Read more</button></p>
+                    
+                    </div>
+      
+       <div> <img src = "floorplant.jpg" alt = "floorplant"></div> 
         <div id = "two">
             <h3> Monstera<br>
                 <i>Monstera deliciosa</i>
@@ -75,6 +70,8 @@
                      </span><button id= "read-more2">Read more</button> </p>
                      
         </div>
+        <div> <img src= "plantdirty.jpg" alt = "plantdirty"> </div>
+        
         <div id= "three">
             <h3> Zenzi ZZ<br>
                 <i> Zamioculcas zamiifolia</i>
@@ -88,19 +85,19 @@
            
         </div>
         
-</div>
-<p id = "products-more"><a href="#">&#8594 View more Products</a></p>
 
-<!-- <form id= "form" >
+</div>
+ <p id = "products-more"><a href="#">&#8594 View more Products</a></p> -->
+
+ <form id= "form" >
     
     <label>Email : <input type= "email" id = "email" placeholder = "type email" required>  </label><br>
     
     <input type = "submit" id = "submit" value = " submit" formaction=" https://www.freecodecamp.com/email-submit">
 
-</form> -->
+</form>
 
-
-</main>
+ </main> 
 
 </body>
 <script src = "main.js"></script>
