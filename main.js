@@ -62,6 +62,19 @@ btn.addEventListener("click", function(){
    
 })
 console.log(navBar.classList.contains("responsive"));
+//newsletter
+const overlay = document.querySelectorAll(".close");
+const form = document.getElementById("form");
+overlay.forEach((e)=>{
+e.addEventListener("click" , function(){
+    if(e.classList.contains("overlay")){
+        form.style.display = "none";
+        
+    }
+    else{
+        form.style.display = "contents";
+    }
+})
 
-
+})
 

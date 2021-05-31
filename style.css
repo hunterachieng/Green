@@ -70,6 +70,10 @@
   color:white;
  
 } 
+/* defining styles for the dropdown */
+#items{
+  color:black;
+}
 
 @media screen  and (max-width:415px){
   .top-nav a{
@@ -356,3 +360,124 @@ font-family: sans-serif;
       margin-left: 10%;
     }
 }
+
+.container{
+  width: 50%;
+  border:1px solid rgb(243, 237, 237);
+  text-align: center;
+  border-radius: 10px;
+  background-color: rgb(196, 233, 196);
+  transform: translate(-30%,-30%);
+  -ms-transform: translate(-30%,-30%);
+  margin-left: 30%;
+  padding: 30px 5px;
+ 
+
+}
+#form{
+  display: none;
+  z-index: 2;
+  
+}
+.close{
+  border: transparent;
+  margin-right: 105%;
+  font-size: 20px;
+  background-color: transparent;
+  color: rgb(114, 245, 114);
+}
+#newsletter{
+  color: rgb(114, 245, 114);
+  margin-top: -0%;
+  filter: drop-shadow(10px 10px 10px rgb(179, 190, 179));
+}
+#quote{
+  font-size: 18px;
+ 
+}
+#author{
+  color: rgb(114, 245, 114);
+  margin-left: 50%;
+}
+#enve-container{
+  border-radius: 70%;
+  border: 1px solid rgb(114, 245, 114);
+  width: 15%;
+  height: 30%;
+  position: absolute;
+  background-color: rgb(114, 245, 114);
+  left: -8%;
+  margin-top: 5%;
+  filter: drop-shadow(10px 10px 10px rgb(179, 190, 179));
+}
+#envelope{
+  color: white;
+  padding: 20px;
+  font-size: 50px;
+  margin-left: -2%;
+  margin-bottom: 170%;
+   
+ }
+ .tick{
+  border-width: 10%;
+   font-weight: bold;
+   font-size: 18px;
+ }
+ 
+   #name{
+     padding: 10px;
+   }
+   #email{
+     padding: 10px;
+   }
+   .buttons{
+     margin-top: 2%;
+    
+     }
+     .texts{
+      margin-top: 1%;
+     }
+     #submit{
+      margin-left: 10%;
+      padding: 5px 50px;
+      font-size: 18px;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+      border-color: rgb(114, 245, 114);
+      background-color: rgb(114, 245, 114);
+      filter: drop-shadow(10px 10px 10px rgb(179, 190, 179));
+     }
+     input{
+       caret-color: rgb(76, 218, 76);
+       
+     }
+     #footer{
+       margin-top: 5%;
+       border: 1px solid black;
+       /* width: auto; */
+       background-color: rgb(48, 47, 47);
+       color: white;
+       
+     }
+     .open{
+       font-size: 18px;
+       margin-top: 2%;
+       width: 20%;
+       padding: 5px 10px;
+      color: white;
+
+     }
+     .open:hover{
+       color: rgb(114, 245, 114);
+     }
+     #social{
+       margin-left: 20%;
+     
+      
+     }
+     #social:hover{
+       color: rgb(114, 245, 114);
+     }
+  
+ 
