@@ -164,203 +164,56 @@
      
    }
 }
-/* #products1{
-  margin-top: 0%;
-  text-align: center;
-  color: rgb(114, 245, 114);
-  font-family: 'Kaushan Script', cursive;
-} */
-#products2{
-  text-align: center;
-}
-@media (max-width:415px){
-  #products1{
-    font-size: 18px;
-  }
-  #products2{
-    font-size: 18px;
-  }
-}
-/* #video{
-    margin-top: 10%;
-    margin-left: 25%;
-    width: 50%;
-} */
-/* @media (max-width:415px){
-  #video{
-    margin-top: 5%;
-    z-index: 1000;
-  }
-
-} */
-/* @media (min-width:705px) and (max-width:1024px){
-  #video{
-    margin-top: 5%;
-    margin-left: 25%;
-    width: 50%;
-}
-} */
-h2{
-  font-family: sans-serif;
+.firstcontainer{
+  display: inline-block;
+  margin-top: 1%;
+  vertical-align: middle;
+  margin-left: 10%; 
   
 }
-hr{
-  width: 10%;
-  margin-top: -1%;
+.intro-text{
+  text-align: center;
 }
-#form{
-    margin-top: 5%;
-    margin-left: 10%;
-    display: flex;
-    
+.number{
+  position: absolute;
+  left: 11%;
+  color: rgb(60, 250, 60);
 }
-#products{
-  display: grid;
-    grid-template-columns:40% 40%;
-  grid-auto-rows: 300px auto;
-  grid-gap:20px;
-  margin-left: 30%;
-}
-
-#products img{
-  width: 100%;
-  height: 100%;
-}
-#products #imagetwo{
-  width: 100%;
-  height: 90%;
-}
-
-@media screen and (max-width:415px){
-  #explanations{
-    font-size: 16px;
-    font-family: serif;
+ 
+  .slideshow-container{
+  width:100%;
+  height: 30%;
+  
+  }
+  .slideshow-container img {
+    width: 80%;
+    height: 30%;
    
   }
-  #products{
-    display: initial; 
-    text-align: center;
-  
-    }
-     /* #one{
-      margin-left: 20%;
-      }
-    #two{
-      margin-left: 20%;
-      }
-    #three{
-      margin-left: 20%;
-  
-    } */
-}
-@media (min-width:450px) and (max-width:800px){
-  #products{
-    display: initial; 
-    text-align: center;
-  
-    }
-     /* #one{
-      margin-left: 20%;
-      }
-    #two{
-      margin-left: 20%;
-      }
-    #three{
-      margin-left: 20%;
-  
-    } */
-}
-#one{
-  width: 100%;
-  line-height: 200%;
-   
-}
+  .pic-slides{
+    display: none;
+  }
 
-#two{
-  width: 100%;
-  line-height: 200%;
+.dots{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: 0 2px;
+  background-color: rgb(114, 245, 114);
+  display: inline-block;
+  transition: background-color 0.5s ease-in;
 }
-#three{
-  width: 100%;
-  line-height: 200%;
+.active{
+  background-color: rgb(124, 141, 124);
 }
-#more{
-  display: none;
+.fade{
+  animation-name: fade;
+  animation-duration: 2s;
 }
-#more2{
-  display: none;
+@keyframes fade{
+  0%{opacity:0.3}
+  100%{opacity: 1}
 }
-#more3{
-  display: none;
-}
-#read-more1{
-  background-color: transparent;
-  border: transparent;
-  font-size: 16px;
-  font-family: sans-serif;
-  color: rgb(190, 115, 115);
-
-}
-#read-more1:hover{
-     color:rgb(248, 193, 121);
-}
-#read-more2{
-  background-color: transparent;
-  border: transparent;
-  font-size: 16px;
-  font-family: sans-serif;
-  color: rgb(190, 115, 115);
-
-}
-#read-more2:hover{
-     color:rgb(248, 193, 121);
-}
-#read-more3{
-  background-color: transparent;
-  border: transparent;
-  font-size: 16px;
-  font-family: sans-serif;
-  color: rgb(190, 115, 115);
-
-}
-#read-more3:hover{
-     color:rgb(248, 193, 121);
-}
-#products-more{
-margin-left: 70%;
-font-size: 18px;
-font-family: sans-serif;
-}
-#products-more a{
-  text-decoration: none; 
-  color: rgb(190, 115, 115);
-}
-#products-more a:hover{
-  text-decoration: none; 
-  color: rgb(248, 193, 121);
-}
-@media (max-width:415px){
-  #products-more{
-    margin-left: 70%;
-    font-size: 12px;
-    font-family: sans-serif;
-    }
-    #read-more1{
-      font-size: 16px; 
-       
-    }
-    #read-more2{
-      font-size: 16px;    
-    }
-    #read-more3{
-      font-size: 16px;    
-    }
-    #products-more{
-      font-size:16px;
-      margin-left: 10%;
-    }
-}
-
 .container{
   width: 50%;
   border:1px solid rgb(243, 237, 237);
@@ -368,11 +221,10 @@ font-family: sans-serif;
   border-radius: 10px;
   background-color: rgb(196, 233, 196);
   transform: translate(-30%,-30%);
-  -ms-transform: translate(-30%,-30%);
   margin-left: 30%;
+  margin-top: -50%;
   padding: 30px 5px;
- 
-
+  
 }
 #form{
   display: none;
@@ -452,28 +304,22 @@ font-family: sans-serif;
        caret-color: rgb(76, 218, 76);
        
      }
-     #footer{
-       margin-top: 5%;
-       height:auto; 
-       width: 60%;    
-       background-color: rgb(48, 47, 47);
-       color: white; 
-                      
-       }        
+          
        
-          html,body{
-      width:100%;
-      height:100%;
-      margin:0;
-      padding: 0;
-    }  
+    
    
      .open{
        font-size: 18px;
-       margin-top: 2%;
+       margin-top: 5%;
+       background-color: rgb(198, 238, 198);
        width: 20%;
        padding: 5px 10px;
-      color: white;
+      color: rgb(15, 14, 14);
+      border-radius: 5px;
+      position: absolute;
+      left:80%;
+      top: -1%;
+
      
 
      }
@@ -487,5 +333,93 @@ font-family: sans-serif;
      #social:hover{
        color: rgb(114, 245, 114);
      }
-   
- 
+   @media (max-width:415px){
+     .container{
+       width: 60%;
+     }
+     #newsletter{
+       font-size: 18px;
+     }
+     #quote{
+      font-size: 16px;
+     
+    }
+    #enve-container{
+      border-radius: 70%;
+     
+      width: 20%;
+      height: 15%;
+      position: absolute;
+      background-color: rgb(114, 245, 114);
+      left: -8%;
+      margin-top: 5%;
+      filter: drop-shadow(10px 10px 10px rgb(179, 190, 179));
+    }
+    #envelope{
+      color: white;
+      padding: 20px;
+      font-size: 25px;
+      margin-left: -25%;
+      margin-top: -10%;
+       
+     }
+     #submit{
+       font-size: 16px;
+     }
+   .tick{
+     font-size: 16px;
+   }
+   .open{
+    font-size: 12px;
+      background-color: rgb(198, 238, 198);
+    width: 50%;
+    padding: 5px 10px;
+   color: rgb(15, 14, 14);
+   border-radius: 5px;
+   position: absolute;
+   left:50%;
+   top: 50%;
+   }
+  }
+  @media (min-width:420px) and (max-width:700px){
+    .container{
+      width: 60%;
+      margin-top: -30%;
+    }
+  
+    #quote{
+     font-size: 18px;
+    
+   }
+   #enve-container{
+     border-radius: 70%;
+    
+     width: 20%;
+     height: 15%;
+     position: absolute;
+     background-color: rgb(114, 245, 114);
+     left: -8%;
+     margin-top: 5%;
+     filter: drop-shadow(10px 10px 10px rgb(179, 190, 179));
+   }
+   #envelope{
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    margin-left: -5%;
+    margin-top: -10%;
+     
+     
+   }
+   .open{
+    font-size: 16px;
+     background-color: rgb(198, 238, 198);
+    width: 50%;
+    padding: 5px 10px;
+   color: rgb(15, 14, 14);
+   border-radius: 5px;
+   position: absolute;
+   left:50%;
+   top: 50%;
+   }
+  }
