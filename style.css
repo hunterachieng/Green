@@ -420,6 +420,45 @@
    border-radius: 5px;
    position: absolute;
    left:50%;
-   top: 50%;
+   top: 48%;
    }
+  }
+  h2{
+    text-align: center;
+    margin-top: 5%;
+  }
+  .offered-items{
+    display: flex;
+  }
+  #items1{
+    text-align: center;
+    width: 25%;
+  }
+  #items1 i{
+    
+    font-size: 30px;
+  }
+  #items2{
+    text-align: center;
+    width: 25%;
+  }
+  #items2 i{
+    
+    font-size: 30px;
+  }
+  #items3{
+    text-align: center;
+    width: 25%;
+  }
+  #items3 i{
+    
+    font-size: 30px;
+  }
+  #items4{
+    text-align: center;
+    width: 25%;
+  }
+  #items4 i{
+    
+    font-size: 30px;
   }
