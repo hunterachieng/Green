@@ -53,6 +53,11 @@ function slidesShow(){
 }
 slidesShow();
 
+var article = document.getElementById("more-article");
+article.addEventListener("click", function(){
+    window.location.href = "https://bit.ly/2SUAJwj"
+})
+
 
 
 
