@@ -20,7 +20,7 @@
 /* defining the main nav block */
 .top-nav{
     display: block;
-    position: fixed;
+    /* position: fixed; */
     height: 60px;
     margin: -6px;
     line-height: 60px;
@@ -325,6 +325,7 @@
       position: absolute;
       left:80%;
       top: -1%;
+      display: none;
 
      
 
@@ -384,6 +385,7 @@
    border-radius: 5px;
    position: absolute;
    left:50%;
+   display: none;
    top: 40%;
    }
   }
@@ -432,12 +434,14 @@
    position: absolute;
    left:50%;
    top: 48%;
+   display: none;
    }
   }
   h2{
     text-align: center;
     margin-top: 5%;
   }
+ 
   .offered-items{
     display: flex;
     
@@ -500,8 +504,8 @@
   .plant-sales{
     display: grid;
     grid-template-columns: 25% 25%;
-    grid-template-rows: 50%;
-    grid-gap:5px;
+    grid-template-rows: 45%;
+    grid-gap:3px;
   
   }
    
