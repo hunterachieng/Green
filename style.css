@@ -480,46 +480,71 @@
   }
   #prices{
     float: right;
-    margin-top: -3%;
+    margin-top: -2%;
     background-color:transparent;
     
   }
-  /* #top , #bottom{
-    text-align: center;
-    font-size: 15px;
-     margin-top: %;
-  } */
-  #seller1, #seller2, #seller3, #seller4{
+   
+  .seller{
     width: fit-content;
-    height: 60%;
+    height: 30%;
+    
   }
-  #seller1 img, #seller2 img{
+  .seller img{
     width: 100%;
-    height: 100%;
+    height: 252px;
+
   }
-  #seller3 img, #seller4 img{
+
+  .sellers{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .image{
+    opacity: 1;
+    display: block;
     width: 100%;
-    height: 100%;
+    transition: 2s ease;
+    backface-visibility: hidden;
+    background: black;
+    
   }
+  .cart{
+    transition: 5s ease; 
+    opacity: 0; 
+    position: absolute;
+    margin-top: 17%;
+    /* transform: translate(-50%, -50%); */
+  }
+  
   .plant-sales{
     display: grid;
-    grid-template-columns: 25% 25%;
-    grid-template-rows: 45%;
-    grid-gap:3px;
+    grid-template-columns: 49% 49%;
+    grid-gap: 4px ;
   
+  }
+  .plant-sales:hover .image{
+    opacity: 0.3;
+   
+  }
+  .plant-sales:hover .cart{
+    opacity: 1;
   }
    
   .plant-article{
     text-align: justify;
-    margin-left: 52%;
-    margin-top: -83%;
+    width: 50%;
+    margin-top: 1.72%;
+   
+  
     
     
   }
   .plant-article img{
-    width: 100%;
-    height: 100%;
+    width: 500px;
+    height: 610px;
   }
+  
   .happy-text{
    position: absolute;
    left: 55%;
@@ -577,6 +602,6 @@
 }
 .heart{
   position: relative;
-  top: 10%;
+  top: 20%;
   left: 2%;
 }
